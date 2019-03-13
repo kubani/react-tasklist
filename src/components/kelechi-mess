@@ -1,0 +1,48 @@
+import React from 'react';
+
+const InputTask = ({value, onInputValue}) => {
+  return (
+    <form className="ui form">
+      <div className="field">
+        <label>Task</label>
+        <input {...onInputValue} {...value} type="text" placeholder="Enter a task..." />
+      </div>
+    </form>
+  );
+}
+
+export default InputTask;
+
+<div className="field">
+          <label>Enter a task...</label>
+        </div>
+        <div className="ui input">
+          <input onChange={ this.onInputValue } value={this.state.inputValue} type="text" />
+        </div>
+
+<button onClick={ this.myTasks }>Add Task</button> 
+
+<div class="field">
+<div class="ui checkbox">
+  <input type="checkbox" tabindex="0" class="hidden">
+  <label>I agree to the Terms and Conditions</label>
+</div>
+</div>
+
+// const MyTasks = props => {
+// 	<div className="header">
+// 		<form onSubmit={this.addToList}>
+// 			<input placeholder="Enter a Task Here...">
+// 			</input>
+// 			<button type="submit">Add Task</button>
+// 		</form>
+// 	</div>
+// }
+// const showItems = (list) => {
+// 		const theLists = this.props.thelists;
+// 		const myItems = theLists.map(this.addTasks);
+// 		return (
+// 			<ul className="myList">
+// 				{myItems}
+// 			</ul>
+// 		);
